@@ -1,0 +1,60 @@
+
+body{
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg,#6366f1,#22d3ee);
+  margin:0;
+  color:#fff;
+}
+.app{
+  max-width:420px;
+  margin:auto;
+  padding:15px;
+}
+h1{text-align:center;}
+.balance-card{
+  background:#0f172a;
+  padding:15px;
+  border-radius:16px;
+  text-align:center;
+  margin-bottom:15px;
+}
+.split{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+form{
+  display:grid;
+  gap:8px;
+}
+input,select,button{
+  padding:10px;
+  border-radius:12px;
+  border:none;
+}
+button{
+  background:#22c55e;
+  font-weight:bold;
+}
+ul{
+  list-style:none;
+  padding:0;
+}
+li{
+  background:#1e293b;
+  margin-top:8px;
+  padding:10px;
+  border-radius:12px;
+}
+.actions{
+  display:flex;
+  justify-content:space-between;
+  margin-top:6px;
+}
+.actions button{
+  padding:6px 10px;
+  border-radius:8px;
+  font-size:12px;
+}
+.edit{background:#38bdf8;}
+.delete{background:#ef4444;color:#fff;}

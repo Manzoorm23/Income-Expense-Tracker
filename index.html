@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense & Income Tracker</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>💰 Expense & Income Tracker</h1>
+
+  <div class="balance-card">
+    <p>Total Balance</p>
+    <h2 id="balance">₹0</h2>
+    <div class="split">
+      <span>Cash: ₹<b id="cash">0</b></span>
+      <span>Account: ₹<b id="account">0</b></span>
+    </div>
+  </div>
+
+  <form id="form">
+    <select id="type">
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+    <input type="number" id="amount" placeholder="Amount" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="date" id="date" required>
+    <select id="mode">
+      <option value="cash">Cash</option>
+      <option value="account">Account</option>
+    </select>
+    <input type="text" id="note" placeholder="Note (optional)">
+    <button>Add / Update</button>
+  </form>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
